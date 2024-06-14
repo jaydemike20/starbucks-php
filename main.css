@@ -257,7 +257,6 @@ nav button {
 
 /* drinks */
 article {
-    width: 100vw;
     height: auto;
     display: flex;
     align-items: center;
@@ -271,6 +270,7 @@ article {
     flex-wrap: wrap;
     justify-content: center;
     gap: 0.5rem;
+    
 }
 
 .drinks__content {
@@ -345,7 +345,6 @@ article {
 
 /* sb stories */
 .sbstories {
-    width: 100vw;
     height: auto;
     display: flex;
     align-items: center;
@@ -364,8 +363,8 @@ article {
 }
 
 .sbstories__content {
-    height: 30vh;
-    width: 49.5%;
+    height: 35vh;
+    width: 49.3%;
     background-color: var(--color-light-yellow);
 }
 
@@ -411,6 +410,84 @@ article {
 .sbstories__desc a:hover {
     background: rgba(0,0,0,0.1);
 }
+
+
+footer {
+    margin: 2% 0%;
+    border-top: 2px solid #E5E5E5;
+}
+
+.footer__container {
+    margin: 2% 8%;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 40px;
+    position: relative;
+}
+
+.footer__content {
+    padding-bottom: 4rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid #E5E5E5;
+}
+
+.footer__links {
+    margin-right: 10%;
+}
+
+.footer__links ul {
+    list-style: none;
+}
+
+.footer__links ul li h4 {
+    font-size: 20px;
+    padding: 1rem 0rem;
+    letter-spacing: 1px;
+
+}
+
+.footer__links ul li:not(:first-child) {
+    margin: 1rem 0rem;
+
+}
+
+.footer__links ul li a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.footer__logo {
+    position: absolute;
+    transform: rotate(270deg);
+    top: 5rem;
+    right: -10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__logo h4 {
+    letter-spacing: 2px;
+    font-size: 24px;
+    font-weight: 900;
+}
+
+
+.open__link, .close__link {
+    display: none;
+    font-size: 3rem;
+    background-color: var(--color-bg);
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+
 
 
 /* for responsive device */
@@ -527,6 +604,7 @@ article {
 
 
     .drinks__content1 {
+        height: auto;
         width: 700px;
         margin: 0.5rem 0rem;
         max-width: 100%;
@@ -544,6 +622,51 @@ article {
 
     }
 
+    .sbstories__desc {
+        padding: 5% 19%;
+
+    }
+
+    /* footer */
+
+    .footer__container {
+        margin: 1%;
+    }
+
+    .footer__content {
+        display: inline-block;
+        padding-bottom: 2rem;
+
+    }
+
+
+    .footer__logo {
+        display: none;
+    }
+
+    .footer__links ul li h4 {
+        font-weight: 100;
+        padding-bottom: 0;
+    }
+
+    .footer__links {
+        position: relative;
+        margin-right: 0;
+    }
+
+    .open__link {
+        display: block;
+    }
+
+    .open__link, .close__link {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .footer__links ul li:not(:first-child) {
+        display: none;
+    }
 
 
     
