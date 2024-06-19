@@ -103,8 +103,10 @@ closeNavBtn.addEventListener('click', closeNav);
 
 // Function to reset nav buttons on screen resize
 const handleResize = () => {
+
     if (window.innerWidth > 800) {
         // Reset the display properties for larger screens
+
         drawernav.style.display = 'none';
         openNavBtn.style.display = 'none';
         closeNavBtn.style.display = 'none';
@@ -114,7 +116,8 @@ const handleResize = () => {
         closeOrderBtn.style.display = 'none';
         openRewardBtn.style.display = 'none';
         closeRewardBtn.style.display = 'none';
-    } else {
+    } 
+    else {
         // Ensure only the open button is visible on smaller screens
         openNavBtn.style.display = 'inline-block';
         closeNavBtn.style.display = 'none';

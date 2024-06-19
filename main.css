@@ -32,6 +32,11 @@
     font-family:  "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+body {
+    position: relative;
+}
+
+
 nav {
     width: 100%;
     height: 97px;
@@ -53,7 +58,6 @@ nav {
     width: 100vw;
     height: 57.25px;
     margin: 0% 6%;
-    /* margin: 0 119.734px; */
     padding: 0 30px;
     max-width: 100%;
     display: flex;
@@ -63,7 +67,7 @@ nav {
 
 .leftnav {
     display: flex;
-    align-items: center;
+    justify-content: center;
     margin-left: 0;
     margin-right: auto;
 }
@@ -74,6 +78,7 @@ nav {
 
 .leftnav li, .rightnav li {
     list-style: none;
+    padding: 2.4rem 0rem;
 }
 
 .leftnav li a {
@@ -211,6 +216,9 @@ nav button {
     color: #00754A;
 }
 
+.active {
+    border-bottom: 6px solid var(--color-accent-green);
+}
 
 /* main featured */
 
@@ -547,6 +555,159 @@ footer {
 }
 
 
+/* menu */
+
+.menu {
+    height: 59vh;
+    background-image: url('images/menu.jpeg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    margin-top: 97px;
+}
+
+.menu__container {
+    width: 100%;
+    margin-left: 17%;
+    margin-bottom: 97px;
+    color: white;
+    border-radius: 10px;
+    
+}
+
+.menu_description h1 {
+    font-size: 4.5rem;
+    font-weight:900;
+    margin-bottom: 1rem;
+}
+
+.menu_description p {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 5rem;
+}
+
+
+.menu_description a {
+    border-radius: var(--card-border-radius-4);
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    text-align: left;
+    border: 1px solid var(--color-bg);    
+    color: var(--color-bg);
+    transition: var(--transition);
+    font-weight: 700;
+}
+
+.menu_description a:hover {
+    background-color: rgba(255,255,255, 0.2);
+}
+
+/* menu article */
+
+.menu__article {
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f9f9f9;
+    height: 10vh;
+    position: sticky;
+    top: 10vh;
+}
+
+.menu_search {
+    width: 100vw;
+    margin: 1% 8%;
+    display: flex;
+    align-items: center;
+    background-color: #F9F9F9;
+}
+
+.menu_search h1 {
+    font-size: 1.5rem;
+    padding-right: 15%;
+}
+
+.menu__searchbar {
+    position: relative;
+    width: 23vw;
+
+}
+
+.menu__searchbar input {
+    width: 100%;
+    height: 45px;
+    font-size: 1.1rem;
+    padding: 1rem;
+    border-radius: var(--card-border-radius-2);
+    border: 1px solid black;
+}
+
+.menu__searchbar i {
+
+    position: absolute;
+    top: 10%;
+    right: 0;
+    font-size: 1.8rem;
+    font-weight: 0;
+    padding: 0 1rem;
+    cursor: pointer;
+    
+}
+
+/* menu  */
+
+.menu__cards {
+    width: 100%;
+    height: 80vh;
+    /* background-color: #00754A; */
+    padding: 0% 8%;
+    padding-top: 3%;
+    padding-bottom: 1%;
+}
+
+aside {
+    width: 18%;
+    height: 100%;
+    overflow-y: scroll;
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+    
+}
+/* For Webkit browsers */
+aside::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* Optional: just in case you want a transparent scrollbar */
+}
+
+.menu__categories {
+    width: 100%;
+}
+
+.menu__categories ul li span {
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+
+
+.menu__categories li  {
+    margin-bottom: 1.5rem;
+}
+
+.menu__categories ul li a {
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.47);
+}
+
+.menu__categories ul li a:hover {
+    color: var(--color-black);
+}
+
 
 
 
@@ -567,6 +728,9 @@ footer {
         margin-left: 0%;
     }
 
+    .menu__container {
+        margin-left: 1%;
+    }
     .drinks__container {
         width: 100%;
         margin: 1% 0%;
@@ -655,6 +819,11 @@ footer {
     .featured {
         background-position-x: 90%;
         background-position-y: 50%;
+    }
+
+    .menu {
+        background-position-x: 90%;
+        background-position-y: 50%;
 
     }
 
@@ -666,6 +835,14 @@ footer {
         width: 100%;
         padding: 5rem 0rem;
     }
+
+    .menu_description h1 {
+        font-size: 3rem;
+        line-height: 5rem;
+        width: 100%;
+        padding: 5rem 0rem;
+    }
+
 
     article {
         width: 100%;
