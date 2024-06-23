@@ -451,7 +451,7 @@ footer {
 }
 
 .footer__links ul li h4 {
-    font-size: 20px;
+    font-size: 18px;
     padding: 1rem 0rem;
     letter-spacing: 1px;
 
@@ -615,7 +615,7 @@ footer {
     background-color: #f9f9f9;
     height: 10vh;
     position: sticky;
-    top: 10vh;
+    top: 9vh;
 }
 
 .menu_search {
@@ -667,6 +667,7 @@ footer {
     padding: 0% 8%;
     padding-top: 3%;
     padding-bottom: 1%;
+    display: flex;
 }
 
 aside {
@@ -708,7 +709,59 @@ aside::-webkit-scrollbar {
     color: var(--color-black);
 }
 
+.drinks__menu {
+    width: 82%;
+    height: 100%;
+    margin-left: 2%;
+    overflow-y: scroll;    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+    
+}
+/* For Webkit browsers */
+.drinks__menu::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* Optional: just in case you want a transparent scrollbar */
+}
 
+.drinks__header h4:first-child {
+    font-size: 24px;
+    border-bottom: 1px solid #E5E5E5;
+    padding-bottom: 1rem;
+}
+
+.drinks__header h4:not(:first-child) {
+    font-size: 24px;
+    border-bottom: 1px solid #E5E5E5;
+}
+
+/* menu drinks */
+.menu__content {
+    margin: 3% 0%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap:  1.5rem;
+}
+
+.image__wrapper:last-child {
+    padding-bottom: 2rem;
+}
+
+.image__wrapper a{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.image__wrapper p {
+    font-size: 1.2rem;
+    color: black;
+}
+
+.image__wrapper img {
+    border-radius: var(--card-border-radius-5);
+}
 
 
 /* for responsive device */
@@ -796,6 +849,14 @@ aside::-webkit-scrollbar {
 
 }
 
+@media screen and (max-width: 1000px ) {
+    aside {
+        display: none;
+    }
+    
+    .image__wrapper img {
+        width: 30%;
+    }
 
 
 
@@ -855,7 +916,7 @@ aside::-webkit-scrollbar {
     }
 
     .drinks__content {
-        width: 700px;
+        width: 100%;
         margin: 0.5rem 0rem;
         max-width: 100%;
         background-color: var(--color-house-green);
@@ -940,7 +1001,23 @@ aside::-webkit-scrollbar {
     .copyright {
         text-align: center;
     }
+
+
+    .menu__content {
+        margin: 3% 0%;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap:  1.5rem;
+    }
     
+    .menu__cards {
+        padding: 0%;
+    }
+
+    .drinks__menu {
+        width: 100%;
+    }
+
 }
 
 
