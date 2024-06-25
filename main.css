@@ -662,7 +662,7 @@ footer {
 
 .menu__cards {
     width: 100%;
-    height: 80vh;
+    height: auto;
     /* background-color: #00754A; */
     padding: 0% 8%;
     padding-top: 3%;
@@ -671,8 +671,10 @@ footer {
 }
 
 aside {
+    position: sticky;
+    top: 20vh;
     width: 18%;
-    height: 100%;
+    height: 80vh;
     overflow-y: scroll;
     scrollbar-width: none; /* For Firefox */
     -ms-overflow-style: none; /* For Internet Explorer and Edge */
@@ -854,6 +856,90 @@ aside::-webkit-scrollbar {
     font-size: 1.5rem;
 
 }
+
+
+
+/*rewards  */
+.sticky__rewards {
+    margin-top: 6.2rem;
+    width: 100vw;
+    background-color: var(--color-house-green);
+}
+
+.sticky__container {
+    padding: 1rem 12%;
+
+}
+
+
+.sticky__container h1 {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: var(--color-bg);
+    letter-spacing: 1px;
+}
+
+.rewards {
+    height: 60vh; 
+    background-image: url('images/rewards.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+.rewards__container {
+    margin-left: 9%;
+    margin-bottom: 97px;
+    color: var(--color-black);
+    border-radius: 10px;
+    
+}
+
+.rewards_description h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    width: 50%;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
+}
+
+.rewards_description p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: 2rem 0rem;
+}
+
+.rewards_description p span {
+
+}
+
+.join__btn {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 1rem;
+    background-color: #00754A;
+    color: white;
+    font-weight: 800;
+    border-radius: var(--card-border-radius-5);
+}
+
+.rewardjoin__link {
+    color: black;
+}
+
+.rewardjoin__link:hover {
+    text-decoration: none;
+    background-color: none;
+}
+
+
+
+
+
+
+
 
 /* for responsive device */
 
